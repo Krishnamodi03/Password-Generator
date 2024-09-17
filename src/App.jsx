@@ -35,7 +35,7 @@ const App = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-800 text-orange-50">
       <div className="w-full max-w-xl h-[25rem] flex flex-col justify-evenly bg-gray-900 shadow-lg rounded-lg p-8 space-y-6">
-        <h1 className="text-3xl font-semibold text-center text-orange-400">Password Generator</h1>
+        <h1 className="text-4xl font-semibold text-center text-orange-400">Password Generator</h1>
 
         <div className="flex items-center space-x-4">
           <input
@@ -56,7 +56,7 @@ const App = () => {
 
         <div className="space-y-8">
           <div className="flex items-center justify-between">
-            <label className="flex-grow text-sm">Password Length: {length}</label>
+            <label className="flex-grow text-md">Password Length: {length}</label>
             <input
               type="range"
               min={6}
@@ -75,7 +75,7 @@ const App = () => {
                 onChange={() => setNumberAllowed(prev => !prev)}
                 className="h-4 w-4 text-orange-400 bg-gray-800 border-gray-600 rounded focus:ring-2 focus:ring-orange-400"
               />
-              <span className="text-sm">Include Numbers</span>
+              <span className="text-md">Include Numbers</span>
             </label>
 
             <label className="flex items-center space-x-2">
@@ -85,7 +85,7 @@ const App = () => {
                 onChange={() => setCharAllowed(prev => !prev)}
                 className="h-4 w-4 text-orange-400 bg-gray-800 border-gray-600 rounded focus:ring-2 focus:ring-orange-400"
               />
-              <span className="text-sm">Include Characters</span>
+              <span className="text-md">Include Characters</span>
             </label>
           </div>
         </div>
