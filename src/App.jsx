@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import { useEffect, useState, useCallback } from 'react'
+import React, { useRef, useEffect, useState, useCallback } from 'react'
 
 const App = () => {
   const [length, setLength] = useState(8)
